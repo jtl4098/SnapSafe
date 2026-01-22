@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "SnapSafe"
-include(":app")
- 
+include(":snapsafe-samples")
+include(":snapsafe-core")
