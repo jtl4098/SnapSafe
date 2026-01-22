@@ -21,6 +21,10 @@ local.properties
 # OS
 .DS_Store
 
+# Docs
+AGENT.md
+
 # Keystores
 *.jks
 *.keystore
+
