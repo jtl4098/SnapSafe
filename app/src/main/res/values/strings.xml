@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SnapSafe</string>
+    <string name="capture_photo">Capture</string>
+    <string name="load_test_image">Load</string>
+    <string name="back_to_camera">Back</string>
+    <string name="result_title">Masked result</string>
+    <string name="result_image_desc">Masked photo result</string>
+</resources>
+
