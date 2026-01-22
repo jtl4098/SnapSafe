@@ -1,4 +1,4 @@
-package com.example.snapsafe
+package com.github.jtl4098.snapsafe
 
 import android.content.Context
 import android.content.Intent
@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.snapsafe.core.BitmapDownsampler
+import com.github.jtl4098.snapsafe.core.BitmapDownsampler
 import java.io.File
 
 class ResultActivity : AppCompatActivity() {
@@ -88,4 +88,5 @@ class ResultActivity : AppCompatActivity() {
         }
     }
 }
+
 

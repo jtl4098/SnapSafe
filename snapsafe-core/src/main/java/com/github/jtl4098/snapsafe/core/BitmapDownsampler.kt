@@ -1,4 +1,4 @@
-package com.example.snapsafe.core
+package com.github.jtl4098.snapsafe.core
 
 object BitmapDownsampler {
     fun calculateInSampleSize(
@@ -21,4 +21,5 @@ object BitmapDownsampler {
         return inSampleSize
     }
 }
+
 

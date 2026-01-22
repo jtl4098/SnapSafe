@@ -1,4 +1,4 @@
-package com.example.snapsafe
+package com.github.jtl4098.snapsafe
 
 import org.junit.Test
 
@@ -15,3 +15,4 @@ class ExampleUnitTest {
         assertEquals(4, 2 + 2)
     }
 }
+
