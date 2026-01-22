@@ -1,7 +1,7 @@
-package com.example.snapsafe
+package com.github.jtl4098.snapsafe
 
 import android.graphics.Bitmap
-import com.example.snapsafe.core.MaskRegion
+import com.github.jtl4098.snapsafe.core.MaskRegion
 
 
 data class MaskResult(
@@ -10,3 +10,4 @@ data class MaskResult(
     val textCount: Int,
     val regions: List<MaskRegion>
 )
+

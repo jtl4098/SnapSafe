@@ -1,4 +1,4 @@
-package com.example.snapsafe
+package com.github.jtl4098.snapsafe
 
 import android.graphics.Color
 
@@ -10,3 +10,4 @@ data class MaskOptions(
     val facePixelSize: Int = 24,
     val debugOutline: Boolean = false
 )
+

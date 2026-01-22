@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.snapsafe"
+    namespace = "com.github.jtl4098.snapsafe"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.snapsafe"
+        applicationId = "com.github.jtl4098.snapsafe"
         minSdk = 34
         targetSdk = 34
         versionCode = 1
@@ -48,3 +48,4 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
 }
+

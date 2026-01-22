@@ -1,4 +1,4 @@
-package com.example.snapsafe.core
+package com.github.jtl4098.snapsafe.core
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -91,4 +91,5 @@ class BitmapMasker(
         }
     }
 }
+
 

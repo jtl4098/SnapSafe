@@ -4,7 +4,7 @@ On-device image redaction SDK for Android. SnapSafe takes an image and returns a
 
 ![SnapSafe badge](https://img.shields.io/badge/status-active-brightgreen)
 ![Android](https://img.shields.io/badge/platform-android-brightgreen)
-![JitPack](https://jitpack.io/v/your-github-user/SnapSafe.svg)
+![JitPack](https://jitpack.io/v/jtl4098/SnapSafe.svg)
 
 ---
 
@@ -16,7 +16,7 @@ On-device image redaction SDK for Android. SnapSafe takes an image and returns a
 
 ---
 
-## Before / After (replace images)
+## Before / After
 
 ![Before](docs/images/before.jpg)
 ![After](docs/images/after.jpg)
@@ -32,6 +32,13 @@ On-device image redaction SDK for Android. SnapSafe takes an image and returns a
 - Sample app that loads an image and shows the masked result
 
 ---
+
+## Dependencies
+- Google ML Kit Face Detection (`com.google.mlkit:face-detection`)
+- Google ML Kit Text Recognition V2 (`com.google.android.gms:play-services-mlkit-text-recognition`)
+- AndroidX ExifInterface (`androidx.exifinterface:exifinterface`)
+
+ML Kit models may download via Play Services on first use.
 
 ## Modules
 - `:snapsafe-core` - SDK logic (masking, detection, utilities)
@@ -55,9 +62,17 @@ dependencyResolutionManagement {
 
 Add dependency:
 
+Groovy:
+```groovy
+dependencies {
+    implementation 'com.github.jtl4098:SnapSafe:v0.2.0'
+}
+```
+
+Kotlin:
 ```kotlin
 dependencies {
-    implementation 'com.github.jtl4098:SnapSafe:v0.1.0'
+    implementation("com.github.jtl4098:SnapSafe:v0.2.0")
 }
 ```
 
@@ -154,3 +169,9 @@ The sample app (`:snapsafe-samples`) lets you load an image and preview the mask
 
 ## License
 Apache 2.0. See `LICENSE`.
+
+
+
+
+
+

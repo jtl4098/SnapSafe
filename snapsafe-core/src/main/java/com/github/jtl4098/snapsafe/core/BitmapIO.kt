@@ -1,4 +1,4 @@
-package com.example.snapsafe.core
+package com.github.jtl4098.snapsafe.core
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -69,3 +69,4 @@ object BitmapIO {
         }
     }
 }
+

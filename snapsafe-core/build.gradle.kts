@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.snapsafe.core"
+    namespace = "com.github.jtl4098.snapsafe.core"
     compileSdk = 36
 
     defaultConfig {
@@ -26,3 +26,4 @@ dependencies {
     implementation("com.google.mlkit:face-detection:16.1.6")
     implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.1")
 }
+

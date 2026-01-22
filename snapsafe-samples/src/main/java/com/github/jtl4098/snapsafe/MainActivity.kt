@@ -1,4 +1,4 @@
-package com.example.snapsafe
+package com.github.jtl4098.snapsafe
 
 import android.net.Uri
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import com.example.snapsafe.core.BitmapIO
+import com.github.jtl4098.snapsafe.core.BitmapIO
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
@@ -117,3 +117,4 @@ class MainActivity : AppCompatActivity() {
         return tempFile
     }
 }
+

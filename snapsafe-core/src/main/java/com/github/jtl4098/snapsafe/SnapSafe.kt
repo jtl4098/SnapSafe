@@ -1,12 +1,12 @@
-package com.example.snapsafe
+package com.github.jtl4098.snapsafe
 
 import android.content.Context
 import android.net.Uri
-import com.example.snapsafe.core.BitmapIO
-import com.example.snapsafe.core.BitmapMasker
-import com.example.snapsafe.core.MaskRegion
-import com.example.snapsafe.core.MaskType
-import com.example.snapsafe.core.MaskingConfig
+import com.github.jtl4098.snapsafe.core.BitmapIO
+import com.github.jtl4098.snapsafe.core.BitmapMasker
+import com.github.jtl4098.snapsafe.core.MaskRegion
+import com.github.jtl4098.snapsafe.core.MaskType
+import com.github.jtl4098.snapsafe.core.MaskingConfig
 import com.google.android.gms.tasks.Tasks
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.face.Face
@@ -224,3 +224,4 @@ class SnapSafe private constructor(
         return regions
     }
 }
+
