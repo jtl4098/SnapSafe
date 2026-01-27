@@ -1,14 +1,14 @@
-# SnapSafe
+# ImageRedact
 
-On-device image redaction SDK for Android. SnapSafe takes an image and returns a masked image, so only the redacted result is uploaded or stored remotely.
+On-device image redaction SDK for Android. ImageRedact takes an image and returns a masked image, so only the redacted result is uploaded or stored remotely.
 
-![SnapSafe badge](https://img.shields.io/badge/status-active-brightgreen)
+![ImageRedact badge](https://img.shields.io/badge/status-active-brightgreen)
 ![Android](https://img.shields.io/badge/platform-android-brightgreen)
-![JitPack](https://jitpack.io/v/jtl4098/SnapSafe.svg)
+![JitPack](https://jitpack.io/v/jtl4098/ImageRedact.svg)
 
 ---
 
-## Why SnapSafe
+## Why ImageRedact
 - **Zero raw exposure**: mask on-device before any upload.
 - **Simple API**: pass a Bitmap/File/Uri, get a masked result.
 - **Privacy-first defaults**: text is solid masked, faces are pixelated.
@@ -41,8 +41,8 @@ On-device image redaction SDK for Android. SnapSafe takes an image and returns a
 ML Kit models may download via Play Services on first use.
 
 ## Modules
-- `:snapsafe-core` - SDK logic (masking, detection, utilities)
-- `:snapsafe-samples` - sample app using the SDK
+- `:ImageRedact-core` - SDK logic (masking, detection, utilities)
+- `:ImageRedact-samples` - sample app using the SDK
 
 ---
 
@@ -65,14 +65,14 @@ Add dependency:
 Groovy:
 ```groovy
 dependencies {
-    implementation 'com.github.jtl4098:SnapSafe:v0.2.0'
+    implementation 'com.github.jtl4098:ImageRedact:v0.2.0'
 }
 ```
 
 Kotlin:
 ```kotlin
 dependencies {
-    implementation("com.github.jtl4098:SnapSafe:v0.2.0")
+    implementation("com.github.jtl4098:ImageRedact:v0.2.0")
 }
 ```
 
@@ -82,9 +82,9 @@ dependencies {
 
 ### Callback API
 ```kotlin
-val snapSafe = SnapSafe(context)
+val ImageRedact = ImageRedact(context)
 
-snapSafe.maskFile(file,
+ImageRedact.maskFile(file,
     onSuccess = { result ->
         val masked = result.bitmap
         val faces = result.faceCount
@@ -98,8 +98,8 @@ snapSafe.maskFile(file,
 
 ### Suspend API
 ```kotlin
-val snapSafe = SnapSafe(context)
-val result = snapSafe.maskFile(file)
+val ImageRedact = ImageRedact(context)
+val result = ImageRedact.maskFile(file)
 ```
 
 ---
@@ -107,7 +107,7 @@ val result = snapSafe.maskFile(file)
 ## API Overview
 
 ```kotlin
-class SnapSafe(context: Context, options: MaskOptions = MaskOptions()) {
+class ImageRedact(context: Context, options: MaskOptions = MaskOptions()) {
     fun maskBitmap(bitmap: Bitmap, rotationDegrees: Int = 0, onSuccess: (MaskResult) -> Unit, onError: (Throwable) -> Unit)
     fun maskFile(file: File, onSuccess: (MaskResult) -> Unit, onError: (Throwable) -> Unit)
     fun maskUri(uri: Uri, onSuccess: (MaskResult) -> Unit, onError: (Throwable) -> Unit)
@@ -156,7 +156,7 @@ class SnapSafe(context: Context, options: MaskOptions = MaskOptions()) {
 ---
 
 ## Sample App
-The sample app (`:snapsafe-samples`) lets you load an image and preview the masked output. It does not use CameraX and is safe for emulator testing.
+The sample app (`:ImageRedact-samples`) lets you load an image and preview the masked output. It does not use CameraX and is safe for emulator testing.
 
 ---
 
@@ -169,6 +169,7 @@ The sample app (`:snapsafe-samples`) lets you load an image and preview the mask
 
 ## License
 Apache 2.0. See `LICENSE`.
+
 
 
 

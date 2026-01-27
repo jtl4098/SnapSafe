@@ -1,17 +1,17 @@
-# Releasing SnapSafe
+# Releasing ImageRedact
 
-This project publishes the SDK from the `:snapsafe-core` module. The sample app is `:snapsafe-samples`.
+This project publishes the SDK from the `:ImageRedact-core` module. The sample app is `:ImageRedact-samples`.
 
 ## Build the SDK AAR
 
 ```bash
-./gradlew :snapsafe-core:assembleRelease
+./gradlew :ImageRedact-core:assembleRelease
 ```
 
 The AAR will be located at:
 
 ```
-snapsafe-core/build/outputs/aar/snapsafe-core-release.aar
+ImageRedact-core/build/outputs/aar/ImageRedact-core-release.aar
 ```
 
 ## JitPack
@@ -40,14 +40,15 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.github.<GitHubUser>:SnapSafe:v0.1.0")
+    implementation("com.github.<GitHubUser>:ImageRedact:v0.1.0")
 }
 ```
 
 ## Sanity checks
-- `./gradlew :snapsafe-core:assembleRelease`
-- `./gradlew :snapsafe-samples:assembleDebug`
+- `./gradlew :ImageRedact-core:assembleRelease`
+- `./gradlew :ImageRedact-samples:assembleDebug`
 
 ## Notes
 - The SDK is camera-agnostic; only the masked output should be uploaded.
 - EXIF stripping is pending; document this in release notes.
+

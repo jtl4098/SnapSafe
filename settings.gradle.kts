@@ -10,9 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://jitpack.io") }
     }
 }
 
-rootProject.name = "SnapSafe"
-include(":snapsafe-samples")
-include(":snapsafe-core")
+rootProject.name = "ImageRedact"
+include(":imageredact-samples")
+include(":imageredact-core")
